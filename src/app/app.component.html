@@ -1,0 +1,6 @@
+<hello name="{{ name }}"></hello>
+<div class="container">
+	<json-schema-form framework="bootstrap-4" autoUpdateContent="true" [options]="jsonFormOptions" *ngIf="formActive"
+		[form]="formSchema" (isValid)="isFormValidFn($event)">
+	</json-schema-form>
+</div>
